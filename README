@@ -1,1 +1,6 @@
+# Hotdog Detector
+
+In the world of Object Detection, there are various pre-trained models available for us to apply customization and turn them into our own model. This project leverages an existing pre-trained model F-RCNN50, to build a Hotdog Detector. 
+
+## How does Faster RCNN work?
 
