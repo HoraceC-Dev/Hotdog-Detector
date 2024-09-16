@@ -13,8 +13,29 @@ This project leverages the pre-existing YOLO v8n model to build a Hotdog Detecto
 ## Installation
 To set up this project on your local machine, follow these steps:
 
-1. Clone the repository:
+1. Navigate to the project directory:
+   ```bash
+   cd path-to-your-folder
+   ```
+2. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-repo.git
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+## Usage
+Once the project is set up, you can either train the model with the source code or use the trained Hotdog Detector to identify hotdogs in your images.
+#### 1. Train a model
+After install all the dependency, run the main.py file(GPU is highly recommended).
+```bash
+python your-path/main.py
+```
 
-   cd your-repo
+#### 2.Identify hotdogs
+In prior to the identification process, please prepare either an url or a path to the image. 
+Afterward, you can run the 
+
+
+   
