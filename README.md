@@ -28,14 +28,18 @@ To set up this project on your local machine, follow these steps:
 ## Usage
 Once the project is set up, you can either train the model with the source code or use the trained Hotdog Detector to identify hotdogs in your images.
 #### 1. Train a model
-After install all the dependency, run the main.py file(GPU is highly recommended).
+After install all the dependency, please 
+run the main.py file(GPU is highly recommended).
 ```bash
 python your-path/main.py
 ```
 
 #### 2.Identify hotdogs
-In prior to the identification process, please prepare either an url or a path to the image. 
-Afterward, you can run the 
+Before starting the identification process, please provide either a URL or a path to the image and assign it to the img_path variable in the main function in run.py:
+```python
+    img_path = "paste your path here"
+```
+
 
 
    
