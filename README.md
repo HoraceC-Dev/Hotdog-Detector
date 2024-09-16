@@ -18,7 +18,7 @@ To set up this project on your local machine, follow these steps:
    ```
 2. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/PmmerHc/Hotdog-Detector.git
    ```
 3. Install the required dependencies:
    ```bash
@@ -34,7 +34,7 @@ Lastly, run the main.py file to begin the training. (Note: The use of a GPU is h
 python your-path/main.py
 ```
 
-#### 2.Identify hotdogs
+#### 2. Identify hotdogs
 Before starting the identification process, please provide either a URL or a path to the image and assign it to the img_path variable in the main function in run.py:
 ```python
     img_path = "paste your path here"
@@ -43,15 +43,15 @@ Before starting the identification process, please provide either a URL or a pat
 Then, run the run.py file. 
 
 ## Model Training Data Analysis
-To objectively evaulate model's performance, multiple metrcies are adopted throughout the training process, including mAP50, mAP50-90, class loss, and box loss. Below are the graphs of each individual metrics over time.
+To objectively evaluate the model's performance, multiple mercies are adopted throughout the training process, including mAP50, mAP50-90, class loss, and box loss. Below are the graphs of each metric over time.
 ![result](Graphs/results.png)
 
-As seen in the graphs, while the metrics for the training dataset continue to decline, the validation dataset has already stabilized and converged to a value at the 70th epochs. The mAP50 index of the validation dataset seemingly level off around 0.6 at the end of the training, indicating a moderate accuracy has been achieved and yet, there is room for improvement. 
+As seen in the graphs, while the metrics for the training dataset continue to decline, the validation dataset has already stabilized and converged to a value at the 70th epoch. The mAP50 index of the validation dataset seemingly levelled off around 0.6 at the end of the training, indicating a moderate accuracy has been achieved and yet, there is room for improvement. 
 
 ![f1_curve](Graphs/F1_curve.png)
-The F1 vs. Confidence Threshold curve illustrates a phenomenon where the model exhibits lower confidence when the F1 score is high, and vice versa. This highlights a concern of the current model being unable to balance Recall and Precision at the same time.  
+The F1 vs. Confidence Threshold curve illustrates a phenomenon where the model exhibits lower confidence when the F1 score is high, and vice versa. This highlights a concern about the current model being unable to balance Recall and Precision at the same time.  
 
-Here is a list of potential enhancement for the model but have not been implemented yet due to either the lack of resources or time constraints:
+Here is a list of potential enhancements for the model that have not been implemented yet due to either the lack of resources or time constraints:
 - Enlarge the data smaple size
 - Employ another YOLO v8 model (n, s, m, l, x)
 - Further optimize hyperparameters (e.g. learning rate, batch size, weight decay, optimizer)
