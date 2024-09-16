@@ -5,10 +5,13 @@ from src.display import detection_display
 
 
 def main():
-    img_path = "path"
-    
+    # Define the path/url to the image
+    img_path = "path/url"
+
+    # Retrieve the trained model
     model = YOLO(YOLO_hotdog_model)
 
+    # Process the image with the retrieved model then display the result
     detection_display(model, img_path)
 
 
