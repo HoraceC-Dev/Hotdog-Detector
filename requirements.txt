@@ -1,8 +1,6 @@
 gdown
-os-sys
-shutil
 zipfile36
 pyyaml
 ultralytics
-opencv-python
 matplotlib
+plt
