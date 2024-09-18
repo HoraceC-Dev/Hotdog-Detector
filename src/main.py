@@ -5,6 +5,7 @@ from src.training import model_training
 
 
 def main():
+    
     # Define the directory to hold the dataset
     directory_to_store_dataset = "path"
 

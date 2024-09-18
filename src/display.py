@@ -29,4 +29,5 @@ def detection_display(model,path):
         # Display the image with bounding boxes and labels
         plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
         plt.axis('off')  # Hide axes
+        plt.show()
 
