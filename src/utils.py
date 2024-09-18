@@ -3,7 +3,7 @@ import os
 import shutil
 import zipfile
 import yaml
-
+from ultralytics import YOLO
 
 def retrieve_dataset(local_directory):
     # Create a local directory to store the provided datasets
@@ -52,3 +52,14 @@ def create_data_yaml_f(root):
     # Write the YAML file
     with open(f'{root}/data.yaml', 'w') as file:
         yaml.dump(data, file, default_flow_style=False)
+
+def retrieve_model(path):
+    if not os.path.exists(path):
+
+        # Create the download URL
+        url = 'https://drive.google.com/file/d/1LXxkSa_AdG_tUTDLpAdysZltsivvgWzq/view?usp=drive_link'
+        
+        # Download the model
+        gdown.download(url, path, quiet=True)
+
+    return YOLO(path)

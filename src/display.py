@@ -1,5 +1,5 @@
 import cv2
-import plt
+import matplotlib.pyplot as plt
 
 def detection_display(model,path):
     results = model(path)
